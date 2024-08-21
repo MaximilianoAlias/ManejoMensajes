@@ -1,0 +1,29 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+
+las etiquetas anteriormente mencionadas nos van a ayudar a que no nos salten errores y
+a usar el thymeleaf en el codigo HTML
+
+para relacionar mi archivo index.html con mi archivo plantilla.html lo que debo hacer es lo siguiente
+relacionar las etiquetas que quiero remplazar por las que tengo en las plantilla.html
+
+por ejemplo en mi plantilla html realice el siguiente codigo:
+
+<body>
+        <header th:fragment="header">
+            <h1>Control de Clientes - Plantilla</h1>
+        </header>
+</body>
+
+para poder realizar la vinculacion al header de mi html lo que tengo que realizar es lo siguiente:
+
+<body>
+        <header th:replace="plantillas/plantilla.html :: header"></header>
+</body>
+
+abro la etiqueta de body a la cual le agrego la propiedad de th para poder usar thymeleaf
+seguidamente con la propiedad de replace voy a reemplazar el segmento de codigo con el que tengo
+en mi "plantilla.html" poniendo primero el nombre de la carpeta y luego el nombre del archivo
+seguidamente coloco :: y el nombre de la etiqueta que posee el codigo con el que quiero reemplazarlo.
+esta labor es la que realizaremos con todas las etiquetas que querramos reemplazar.
+
