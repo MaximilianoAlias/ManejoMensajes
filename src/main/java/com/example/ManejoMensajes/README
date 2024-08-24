@@ -27,3 +27,16 @@ en mi "plantilla.html" poniendo primero el nombre de la carpeta y luego el nombr
 seguidamente coloco :: y el nombre de la etiqueta que posee el codigo con el que quiero reemplazarlo.
 esta labor es la que realizaremos con todas las etiquetas que querramos reemplazar.
 
+En el nuevo proyecto de control de mensajes básicamente lo que vamos a hacer en esta elección es que ahora en lugar de escribir directamente
+cada una de las etiquetas por ejemplo en este caso el título - control clientes - crear persona -
+las cabeceras de nuestra tablas como Nombre, Apellido, Email, etcétera.
+a cada una las vamos a escribir y las vamos a obtener desde un archivo de propiedades.
+Este es el manejo de mensajes con los que trabajamos con Spring y posteriormente esto nos va a servir en otra leccion
+para poder manejar los distintos idiomas que podemos mostrar en nuestras paginas.
+
+Tambien se ha aplicado el concepto de messages.properties para mostrar texto desde una
+plantilla de mensajes para mejor lectura del codigo, este es un ejercicio diferente al aplicado en
+la clase de plantilla.html...
+
+
+

@@ -1,7 +1,7 @@
-package com.example.ManejoPlantillas.web;
+package com.example.ManejoMensajes.web;
 
-import com.example.ManejoPlantillas.Domain.Persona;
-import com.example.ManejoPlantillas.Service.IPersonaService;
+import com.example.ManejoMensajes.Domain.Persona;
+import com.example.ManejoMensajes.Service.IPersonaService;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

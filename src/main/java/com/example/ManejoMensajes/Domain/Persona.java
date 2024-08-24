@@ -1,4 +1,4 @@
-package com.example.ManejoPlantillas.Domain;
+package com.example.ManejoMensajes.Domain;
 
 import jakarta.persistence.*;
 import jakarta.persistence.Id;

@@ -1,6 +1,6 @@
-package com.example.ManejoPlantillas.Service;
+package com.example.ManejoMensajes.Service;
 
-import com.example.ManejoPlantillas.Domain.Persona;
+import com.example.ManejoMensajes.Domain.Persona;
 
 import java.util.List;
 

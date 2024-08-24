@@ -1,7 +1,7 @@
-package com.example.ManejoPlantillas.Service;
+package com.example.ManejoMensajes.Service;
 
-import com.example.ManejoPlantillas.Dao.IPersonaDao;
-import com.example.ManejoPlantillas.Domain.Persona;
+import com.example.ManejoMensajes.Dao.IPersonaDao;
+import com.example.ManejoMensajes.Domain.Persona;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

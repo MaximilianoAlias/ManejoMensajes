@@ -1,13 +1,13 @@
-package com.example.ManejoPlantillas;
+package com.example.ManejoMensajes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ManejoPlantillasApplication {
+public class ManejoMensajesApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ManejoPlantillasApplication.class, args);
+        SpringApplication.run(ManejoMensajesApplication.class, args);
     }
 
 }

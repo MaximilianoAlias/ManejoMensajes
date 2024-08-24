@@ -1,6 +1,6 @@
-package com.example.ManejoPlantillas.Dao;
+package com.example.ManejoMensajes.Dao;
 
-import com.example.ManejoPlantillas.Domain.Persona;
+import com.example.ManejoMensajes.Domain.Persona;
 import org.springframework.data.repository.CrudRepository;
 
 /*Creamos una interface llamadaP IPersonaDato y vamos a extender de otra interface llamada

@@ -10,16 +10,16 @@
 <!-- Vamos a crear el crud en el html para eso debemos crear una etiqueta de tipo anchor
  en donde nuestro href va a tener la nueva ruta de la pagina a la cual nos dirigiremos
  para ello usaremos la siguiente sintaxis -->
-<a th:href="@{/agregar}">Agregar Persona</a> <br>
+<a th:href="@{/agregar}" th:text="#{plantilla.agregar-persona}"></a> <br><br>
 <div th:if="${listaPersonas != null and !listaPersonas.isEmpty()}">
     <table border="1">
         <tr bgcolor="#7fffd4red">
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Email</th>
-            <th>Telefono</th>
-            <th>Editar</th>
-            <th>Eliminar</th>
+            <th th:text="#{plantilla.th-nombre}"></th>
+            <th th:text="#{plantilla.th-apellido}"></th>
+            <th th:text="#{plantilla.th-email}"></th>
+            <th th:text="#{plantilla.th-telefono}"></th>
+            <th th:text="#{plantilla.th-editar}"></th>
+            <th th:text="#{plantilla.th-eliminar}"></th>
         </tr>
 
         <tr th:each="persona : ${listaPersonas}" bgcolor="#adff2f">
@@ -30,14 +30,14 @@
             <!-- en el href cuando ponemos el @{/editar} hacemos referencia al metodo que vamos a llamar
              de nuestro controlador y en este caso le concatenamos el ID de la persona a la cual le modificaremos los datos
              -->
-            <td><a th:href="@{'/editar/' + ${persona.idPersona}}" th:text="'Editar'"></a></td>
-            <td><a th:href="@{'/eliminar/' + ${persona.idPersona}}" th:text="'Eliminar'"></a></td>
+            <td><a th:href="@{'/editar/' + ${persona.idPersona}}" th:text="#{plantilla.accion-editar}"></a></td>
+            <td><a th:href="@{'/eliminar/' + ${persona.idPersona}}" th:text="#{plantilla.accion-eliminar}"></a></td>
 
         </tr>
     </table>
 </div>
 <div th:if="${listaPersonas == null or listaPersonas.isEmpty()}">
-    <h1 th:text="${listaVacia}" bgcolor="RED"></h1>
+    <h1 th:text="#{lista.vacia.mensaje}" bgcolor="RED"></h1>
 </div>
 
 

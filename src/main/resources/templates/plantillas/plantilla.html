@@ -2,15 +2,19 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
 xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Plantillas</title>
+    <title>ManejoMensajes</title>
 </head>
 <body>
         <header th:fragment="header">
-            <h1>Control de Clientes - Plantilla</h1>
+            <h1 th:text="#{plantilla.titulo}">Control de Clientes - Plantilla</h1>
+            <h2>Manejo de mensajes con thymeleaf</h2>
+
         </header>
 
+
+
         <footer th:fragment="footer">
-            <p>Derechos Reservados <a href="https://github.com/MaximilianoAlias" target="_blank">github.com/MaximilianoAlias</a>.</p>
+            <p>[[#{plantilla.pie-pagina}]]<a href="https://github.com/MaximilianoAlias" target="_blank">github.com/MaximilianoAlias</a></p>
         </footer>
 
 </body>
