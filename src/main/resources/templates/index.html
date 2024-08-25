@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <body>
 <head>
-    <title>Plantillas con Thymeleaf</title>
+    <title th:text="#{plantilla.title}">Plantillas con Thymeleaf</title>
 </head>
 <header th:replace="plantillas/plantilla.html :: header"></header>
 
@@ -14,6 +14,10 @@
 <div th:if="${listaPersonas != null and !listaPersonas.isEmpty()}">
     <table border="1">
         <tr bgcolor="#7fffd4red">
+            <!-- usamos la plantilla para reemplazar los nombres del header de la cabecera
+             para no escribir sobre el archivo html, la sintaxis es la siguiente
+             #{plantilla.th-nombre}. la sintaxi cambia de acuerdo al nombre de la llave
+             colocada en la plantilla de messages.properties-->
             <th th:text="#{plantilla.th-nombre}"></th>
             <th th:text="#{plantilla.th-apellido}"></th>
             <th th:text="#{plantilla.th-email}"></th>
@@ -23,6 +27,9 @@
         </tr>
 
         <tr th:each="persona : ${listaPersonas}" bgcolor="#adff2f">
+            <!-- Recorremos con un each nuestra base de datos en donde creamos una variable temporal llamada
+             persona e invocamos los datos para cada dato de cada celda con el atributo del objeto,
+             por ejemplo persona.nombre-->
             <td th:text="${persona.nombre}"></td>
             <td th:text="${persona.apellido}"></td>
             <td th:text="${persona.email}"></td>
